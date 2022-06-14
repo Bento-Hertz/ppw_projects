@@ -1,1 +1,2 @@
-CTRL + F2
+Ctrl + F2  --  selecionar todos os elementos iguais do código
+Alt + Shift + F  -- identar o código inteiro

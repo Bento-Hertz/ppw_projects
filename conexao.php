@@ -7,7 +7,7 @@ qual é a tabela?
 quais são os campos da tabela?
 */
 
-$servidora = "localhost";
+$servidor = "localhost";
 $bdname = "cadastro";
 $usuario = "root";
 $senha = "";

@@ -7,23 +7,18 @@
 </head>
 <body>
 	<h2>Cadastro</h2>
-	<form>
-		<label>Nome de usuário:</label>
-		<input type="text" name="nome_usuario">
+	<form action="enviar.php" method="post" autocomplete="on">
+		<label>Nome Completo:</label>
+		<input type="text" name="nome">
+
+		<label>Data de Nascimento:</label>
+		<input type="date" name="data">
+
+		<label>E-mail:</label>
+		<input type="text" name="email">
 
 		<label>Senha:</label>
-		<input type="text" name="senha">
-
-		<label>Confirmar senha:</label>
-		<input type="text" name="confirma_senha">
-
-		<label>CPF:</label>
-		<input type="text" name="CPF">
-
-		<label>Gênero:</label>
-		<label><input type="radio" name="genero" value="Masculino"> Masculino</label>
-		<label><input type="radio" name="genero" value="Feminino"> Feminino</label>
-		<label><input type="radio" name="genero" value="Outro"> Outro</label>
+		<input type="password" name="senha">
 
 		<input type="submit" name="enviar" value="Enviar">
 	</form>

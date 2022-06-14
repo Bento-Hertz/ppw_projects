@@ -3,7 +3,7 @@
 quem é o banco? -- cadastro
 quem é o usuário do banco? -- root
 qual é a senha que o usuário usa para comprovar que é ele mesmo? sem senha
-qual é a tabela?
+qual é a tabela?a
 quais são os campos da tabela?
 */
 

@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Formulário</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="formularioCSS.css">
-	<script type="text/javascript">
+	<head>
+		<title>Formulário</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="formularioCSS.css">
+	</head>
+	<body>
+		<h2>Cadastro</h2>
+		<form action="cadastro.php" method="post" autocomplete="on">
+			<label>Nome Completo:</label>
+			<input type="text" name="nome" id="name">
 
-		console.log(document.getELementById("name").value.length == 0)
-		/*
-		if(document.getELementById("name").value.length == 0){
+			<label>Data de Nascimento:</label>
+			<input type="date" name="data" id="date">
 
-		}
-	</script>
-</head>
-<body>
-	<h2>Cadastro</h2>
-	<form action="cadastro.php" method="post" autocomplete="on">
-		<label>Nome Completo:</label>
-		<input type="text" name="nome" id="name">
+			<label>E-mail:</label>
+			<input type="text" name="email" id="email">
 
-		<label>Data de Nascimento:</label>
-		<input type="date" name="data" id="date">
+			<label>Senha:</label>
+			<input type="password" name="senha" id="password">
 
-		<label>E-mail:</label>
-		<input type="text" name="email" id="email">
+			<input type="submit" name="enviar" value="Enviar" onclick="return validacao()">
+		</form>
 
-		<label>Senha:</label>
-		<input type="password" name="senha" id="password">
+		<script type="text/javascript" defer>
 
-		<input type="submit" name="enviar" value="Enviar">
-	</form>
-</body>
+			function validacao(){
+				if(document.getELementById("name").value.length == 0){
+					alert("Por favor, preencha o campo nome.")
+					return false
+				} 
+				else{
+					document.getElementById("enviar").submit()
+					return true
+				}	
+			}
+
+		</script>
+	</body>
 </html>

@@ -4,21 +4,29 @@
 	<title>Formulário</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="formularioCSS.css">
+	<script type="text/javascript">
+
+		console.log(document.getELementById("name").value.length == 0)
+		/*
+		if(document.getELementById("name").value.length == 0){
+
+		}
+	</script>
 </head>
 <body>
 	<h2>Cadastro</h2>
 	<form action="cadastro.php" method="post" autocomplete="on">
 		<label>Nome Completo:</label>
-		<input type="text" name="nome">
+		<input type="text" name="nome" id="name">
 
 		<label>Data de Nascimento:</label>
-		<input type="date" name="data">
+		<input type="date" name="data" id="date">
 
 		<label>E-mail:</label>
-		<input type="text" name="email">
+		<input type="text" name="email" id="email">
 
 		<label>Senha:</label>
-		<input type="password" name="senha">
+		<input type="password" name="senha" id="password">
 
 		<input type="submit" name="enviar" value="Enviar">
 	</form>

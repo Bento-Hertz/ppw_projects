@@ -1,5 +1,5 @@
 <?php
 /*
-teste1
+teste
 */
 ?>

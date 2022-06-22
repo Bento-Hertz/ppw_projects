@@ -3,41 +3,28 @@
 	<head>
 		<title>Formulário</title>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="formularioCSS.css">
 	</head>
 	<body>
 		<h2>Cadastro</h2>
-		<form action="cadastro.php" method="post" autocomplete="on">
+		<form action="cadastro.php" method="post" onsubmit="return validacao()">
 			<label>Nome Completo:</label>
-			<input type="text" name="nome" id="name">
+			<input type="text" name="nome" class="obrigatorio" id="name">
 
 			<label>Data de Nascimento:</label>
-			<input type="date" name="data" id="date">
+			<input type="date" name="data" class="obrigatorio" id="date">
 
 			<label>E-mail:</label>
-			<input type="text" name="email" id="email">
+			<input type="text" name="email" class="obrigatorio" id="email">
 
 			<label>Senha:</label>
-			<input type="password" name="senha" id="password">
+			<input type="password" name="senha" class="obrigatorio" id="password">
 
-			<input type="submit" name="enviar" value="Enviar" onclick="return validacao()">
+			<input type="submit" name="enviar" value="Enviar">
 		</form>
 
-		<script type="text/javascript" defer>
-
-			function validacao(){
-				if(document.getELementById("name").value.length == 0){
-					alert("Por favor, preencha o campo nome.")
-					return false
-				} 
-				else{
-					document.getElementById("enviar").submit()
-					return true
-				}	
-			}
-
+		<script src="./javascript.js"></script>
 		</script>
 	</body>
 </html>

@@ -7,10 +7,10 @@ qual é a tabela?
 quais são os campos da tabela?
 */
 
-$servidor = "localhost";
-$bdname = "cadastro";
-$usuario = "root";
-$senha = "";
+$servidor = "br894.hostgator.com.br";
+$bdname = "mvpstudi_cadastro_bento";
+$usuario = "mvpstudi_elektro";
+$senha = "ipi2022";
 $porta = 3306;
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $bdname, $porta);
